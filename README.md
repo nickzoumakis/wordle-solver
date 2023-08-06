@@ -10,7 +10,7 @@ This was my final project for Harvard University' s CS50p 2023 course on program
 The program prompts the user for a list of confirmed excluded and included letters respectively. Then requests permission to provide exact locations (or NOT locations). These lists are then fed into separate functions, each of which returns a regular expression pattern that is applied at different levels of the dictionary search, progressively narrowing the results.
 
 ## Technical stuff:
-- The program makes extensive use of Python' s re module for regular expressions. User input is captured with the use of the **re.findall** method. This ensures the creation of a list of individual letters, regardless of the way they were input by the user. So, 'a, b, c, d' produces the same output as 'abcd' and 'a.b.c.d' -> ['a', 'b', 'c', 'd'].
+- The program makes extensive use of Python' s re module for regular expressions. User input is captured with the use of the **re.findall** method. This ensures the creation of a list of individual letters, regardless of the way they were input by the user. So, 'a, b, c, d' produces the same output as 'abcd' and 'a.b.c.d' -> ['a', 'b', 'c', 'd']. **Invalid input is ignored**, so 'ab23,#3' will yield ['a', 'b'].
 
 - The duplicate function checks if the user has provided the same letter(s) in included and excluded groups and halts further execution of the program.
 
