@@ -16,6 +16,5 @@ The program prompts the user for a list of confirmed excluded and included lette
 
 - Each of the functions pattern1, pattern2 and pattern3 return regular expression patterns that are applied in main with ***re.search***. Pattern1 returns a regex of the type **r'\b[^abcd..]{5}\b'** which ensures exclusion and word length of 5 letters. Pattern2 returns a regex pattern of type **r'\b(?=w\*a)(?=w\*b)...\w+\b'**, ensuring the inclusion of each letter using positive lookahead. Finally, pattern3 functions returns a tuple of regex patterns for defining NOT locations and exact locations respectively. Notice how each is used at a different nesting depth in the main program loop.
 
-- Finally, the test_project.py file executes some test on the expected return values of some functions with the help of Pytest.
 ### Epilogue
 I hope you find my project interesting and eventually useful. Thanks for reading!
