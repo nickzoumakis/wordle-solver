@@ -3,7 +3,7 @@
 ## Description:
 This was my final project for Harvard University' s CS50p 2023 course on programming with Python: a ***Python program*** that provides possible solutions to a Wordle puzzle.
 ## Included files:
-- ***project.py :*** Source code file.
+- ***solver.py :*** Source code file.
 - ***dict.txt :*** Text dictionary of English words - required ([source](https://github.com/dwyl/english-words/blob/master/words_alpha.txt)).
 - ***README.md :*** What you' re reading right now.
 ## Overview:
